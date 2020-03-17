@@ -1,2 +1,2 @@
 # TMS-Vlad-Muksinov
-https://github.com/LarsMoran/js-assignments
+https://larsmoran.github.io/
