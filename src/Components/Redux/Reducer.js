@@ -14,7 +14,8 @@ const initialState = {
     // currentPage: 1,
     // previousPage: -1,
     translation: 0,
-    pageToken: ''
+    pageToken: '',
+    localStorage: ''
 }
 
 export function videoReducer(state = initialState, action) {
@@ -33,7 +34,7 @@ export function videoReducer(state = initialState, action) {
                 loading: false,
                 currentPage: 1,
                 previousPage: -1,
-                translation: 0
+                translation: 0,
             }
         }
         case GET_VIDEO_FAIL: {

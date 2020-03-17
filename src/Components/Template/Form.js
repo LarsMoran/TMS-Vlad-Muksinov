@@ -18,7 +18,6 @@ const VideoContainer = styled.div`
 `
 
 const ButtonContainer = styled.div`
-position: absolute;
 display: flex;
 flex-flow: row-nowrap;
 `
@@ -51,30 +50,31 @@ height: 50px;
 `
 
 const SwipeButtonNext = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.5);
-  right: 0;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    margin: auto;
 `
 const SwipeButtonPrevious = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.5);
-  left: 0;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    margin: auto;
+    
 `
 export const Form = () => {
     
@@ -118,11 +118,10 @@ export const Form = () => {
             <VideoContainer> 
                 {videos.length === 0?'':videos.map(video=> <VideoBox video={video}></VideoBox>)}
             </VideoContainer>
-            <ButtonContainer >
-                <SwipeButtonPrevious disabled={videos.length===0 || currentPage===1 ? true : false}  onClick={previousPage}>{'<='}</SwipeButtonPrevious>
-                <SwipeButtonNext disabled={videos.length===0 ? true : false}  onClick={nextPage}>{'=>'}</SwipeButtonNext>  
-            </ButtonContainer>
-                               
+            <ButtonContainer>
+            <SwipeButtonPrevious disabled={videos.length===0 || currentPage===1 ? true : false}  onClick={previousPage}>{'<='}</SwipeButtonPrevious>
+            <SwipeButtonNext disabled={videos.length===0 ? true : false}  onClick={nextPage}>{'=>'}</SwipeButtonNext>
+            </ButtonContainer>                       
         </div>
     )
 }

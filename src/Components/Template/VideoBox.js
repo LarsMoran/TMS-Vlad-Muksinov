@@ -6,9 +6,10 @@ position: relative;
 display: flex;
 flex-flow: column nowrap;
 width: 320px;
+height: 300px;
 transition: transform 0.8s ease;
 margin: 40px;
-border-radius: 10%
+border-radius: 10%;
 `
 
 const ChannelTitle = styled.a`
