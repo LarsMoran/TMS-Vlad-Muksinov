@@ -29,19 +29,17 @@ for (let i = 0; i<arr.length; i++) {
 }*/
 
 
-class Lol {
-    constructor(name) {
-        this.name = name
-    }
-    name = this.name
-    consoled() {
-      console.log(this.name)
-      console.log(this.name)
-    }
-    
+let heightRequirement = 46;
+
+function canRide(height) {
+  return height >= heightRequirement;
 }
 
-const log = new Lol('sanya')
+// Каждые полсекунды назначаем heightRequirement случайное число от 0 до 200.
+setInterval(() => heightRequirement = Math.floor(Math.random() * 201), 500);
 
-log.consoled()
+const mySonsHeight = 47;
 
+// Каждые полсекунды проверяем, может ли мой сын кататься.
+// Иногда это будет правдой, а иногда - ложью.
+setInterval(() => console.log(canRide(mySonsHeight)), 500);
