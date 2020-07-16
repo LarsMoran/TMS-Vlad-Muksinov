@@ -29,6 +29,7 @@ class Operator {
     sendMoney() {
         bank.dollar = this.currency.sendMoney()//наш метод sendMoney не должен знать ничего про валюту, а просто выполнять перевод денег
     }
+    
 }
 
 const operation = new Operator
