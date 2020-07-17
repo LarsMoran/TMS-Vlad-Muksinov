@@ -15,3 +15,4 @@ promise.then((data) => console.log(data))
 .then(() => console.log('This is Alfred'))
 .catch((data) => console.log(data))
 .finally(() => console.log('Something has arrived'))
+

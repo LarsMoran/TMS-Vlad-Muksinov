@@ -29,7 +29,7 @@ for (let i = 0; i<arr.length; i++) {
 }*/
 
 
-let heightRequirement = 46;
+/*let heightRequirement = 46;
 
 function canRide(height) {
   return height >= heightRequirement;
@@ -42,4 +42,4 @@ const mySonsHeight = 47;
 
 // Каждые полсекунды проверяем, может ли мой сын кататься.
 // Иногда это будет правдой, а иногда - ложью.
-setInterval(() => console.log(canRide(mySonsHeight)), 500);
+setInterval(() => console.log(canRide(mySonsHeight)), 500);*/
