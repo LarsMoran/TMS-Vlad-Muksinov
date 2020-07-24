@@ -43,3 +43,4 @@ const mySonsHeight = 47;
 // Каждые полсекунды проверяем, может ли мой сын кататься.
 // Иногда это будет правдой, а иногда - ложью.
 setInterval(() => console.log(canRide(mySonsHeight)), 500);*/
+console.dir(fetch('aaaaa'))
